@@ -62,8 +62,12 @@ function track($ip)
 system("clear") or system("cls");  
 banner();
 echo "\033[97mIP : \033[92m";
-$ip = trim(fgets(STDIN, 1024));
-echo "\033[94mTracking....\n";
-track($ip);						
+$urip = trim(fgets(STDIN, 1024));
+if( is_numeric($urip) ){
+	echo "\033[94mTracking....\n";
+	track($ip);		
+}else{
+	$ip = gethostbyname($urip);
+	track($ip);
 
  ?>
