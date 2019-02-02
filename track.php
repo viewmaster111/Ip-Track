@@ -61,7 +61,7 @@ function track($ip)
 
 system("clear") or system("cls");  
 banner();
-echo "\033[97mIP : \033[92m";
+echo "\033[97mIP OR DOMAIN : \033[92m";
 $urip = trim(fgets(STDIN, 1024));
 if( is_numeric($urip) ){
 	echo "\033[94mTracking....\n";
