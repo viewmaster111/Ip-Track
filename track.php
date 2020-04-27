@@ -1,4 +1,4 @@
-
+<html>
 <?php
 
 error_reporting(0);
@@ -72,3 +72,4 @@ if( is_numeric($urip) ){
         track($ip);
 }
  ?>
+</html>
